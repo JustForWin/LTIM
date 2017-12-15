@@ -75,7 +75,7 @@ body{
 	top: 80px;
 	left:105px;
 }
-#app .main input{
+#app .main input[type="text"],#app .main input[type = "password"]{
 	display: block;
 	margin: 0;
 	padding: 0;
@@ -94,7 +94,7 @@ body{
 	position: absolute;
 	height: 29px;
 	top: 15px;
-	left: 140px;
+	left: 130px;
 	border-top-left-radius: 4px;
 	border-top-right-radius: 4px;
 }
@@ -103,21 +103,21 @@ body{
 	height: 29px;
 	position: absolute;
 	top: 45px;
-	left: 140px;
+	left: 130px;
 	border-bottom-left-radius: 4px;
 	border-bottom-right-radius: 4px;
 }
 #app .main .drop-down{
 	position: absolute;
 	top: 20px;
-	left: 305px;
+	left: 295px;
 	z-index: 3;
 	color: #c3c8cc;
 }
 #app .main .keybord{
 	position: absolute;
 	top: 50px;
-	left: 305px;
+	left: 295px;
 	z-index: 3;
 	color: #c3c8cc;
 }
@@ -137,22 +137,81 @@ body{
 #app .main .register{
 	position: absolute;
 	top: 20px;
-	left: 340px;
+	left: 330px;
 }
 #app .main .findpsw{
 	position: absolute;
 	top: 50px;
-	left: 340px;
+	left: 330px;
 }
 #app .main input[type=checkbox]{
+	margin: 0;
 	display: inline-block;
 }
 #app .main .checkboxs{
 	display: inline-block;
 	width: 192px;
 	height: 20px;
-	background: red;
 	position: absolute;
 	top: 80px;
-	left: 140px;
+	left: 130px;
+}
+#app .main .remember{
+	float: left;
+	
+}
+#app .main .autologin{
+	float: right;
+}
+
+#app .main .footer{
+	width: 430px;
+	height: 40px;
+	position: absolute;
+	bottom: 5px;
+}
+
+#app .main .footer .user{
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	margin: 10px 0 0 3px;
+	border-radius: 4px;
+	float: left;
+	transition: background 1s;
+}
+
+#app .main .footer #loginbtn{
+	width: 190px;
+	height: 40px;
+	background: #00A3FF;
+	margin: 0px 0 0 13px;
+	border-radius: 6px;
+	letter-spacing: 3px;
+	color: white;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	border: none;
+	outline: none;
+	transition: background 1s;
+}
+#app .main .footer #loginbtn:hover{
+	background: #3cc3f5;
+	cursor: pointer;
+}
+
+#app .main .footer .two{
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	margin: 10px 3px 0 0;
+	border-radius: 4px;
+	float: right;
+	transition: background 1s;
+}
+
+
+#app .main .footer .user:hover,#app .main .footer .two:hover{
+	background: #D8DFE5;
+	cursor: pointer;
 }
